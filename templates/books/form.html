@@ -1,0 +1,12 @@
+{% extends 'books/index.html' %}
+
+{% block content %}
+<h1>Form</h1>
+<form method="POST" action="">
+    {% csrf_token %}
+    <div class="container-md" style="display:flex; flex-direction: column; gap: 10px;">
+        {{form}}
+        <input type="submit" name="Submit">
+    </div>
+</form>
+{% endblock %}
